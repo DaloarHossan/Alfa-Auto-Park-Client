@@ -1,0 +1,123 @@
+[{
+   "name":"BUGATTI CHIRON",
+   "description":"The CHIRON is the fastest, most powerful, and exclusive production super sports car in BUGATTI's history. Its sophisticated design, innovative technology, and iconic, performance-oriented form make it a unique masterpiece of art, form and technique, that pushes boundaries beyond imagination.",
+   "price":"3,300,000",
+   "seller":"Volkswagen Group",
+   "img":"https://i.ibb.co/d6jW95X/bugatijpg.jpg",
+   "quantity":"5"
+},
+
+{
+	"name":"Lamborghini Huracán EVO RWD SPYDER",
+	"description":"The Huracán EVO RWD Spyder is dedicated to those who believe in the pure pleasure and excitement of driving, an experience heightened by the adrenaline that comes from open-top performance. Discovering new roads with the wind in your hair, heart racing with the sound of the engine, gives you an unparalleled feeling of freedom as you accelerate toward new emotions.",
+    "price":"230,266",
+	"img":"https://i.ibb.co/dMnXKSC/lanbo.jpg",
+	"quantity":"6",
+	"seller":"Lamborghini"
+
+}
+,
+{
+	"name":"Cadillac Celestiq",
+	"description":"The Celestiq will draw its electrons from an Ultium battery pack that could be as large as 100 kWh. Cadillac says driving range will be at least 300 miles per charge; if larger battery packs are offered as options, the car's maximum range could be even better. ",
+    "price":"90000",
+	"img":"https://i.ibb.co/Scz406R/jaguar.jpg",
+	"quantity":"5",
+	"seller":"Cadillac"
+
+}
+,
+{
+	"name":"Mustang Shelby GT500",
+	"description":"Ford Mustang Shelby GT500 kind of like a rolling theme park. Its monstrous 760-hp supercharged V-8 launches the coupe with eye-watering force, and its immense grip causes sensations of euphoria or nausea or both.",
+    "price":"79,00",
+	"img":"https://i.ibb.co/gVS6nCQ/mustung.jpg",
+	"quantity":"7",
+	"seller":"Ford Mustang"
+
+}
+,
+{
+	"name":"BMW M4",
+	"description":"The BMW M4 is a high-performance sport coupe that serves as one of the fastest and most powerful cars in BMW's lineup. Both the M4 and the 4 Series coupe it's based on were completely redesigned for 2021, with new tech and styling backed by the most powerful M4 engine ever. For 2022 the M4 Competition is now available with all-wheel drive.",
+    "price":"69000",
+	"img":"https://i.ibb.co/WnmP6bc/bmw.jpg",
+	"quantity":"8",
+	"seller":"BMW"
+
+}
+,
+{
+	"name":"Porsche 911",
+	"description":"The 911 comes in coupe, cabriolet, or quasi-convertible Targa body styles. The beauty of the 911 is that its athleticism doesn't diminish its livability. Its ride is surprisingly civil considering its cornering limits and race car-like steering feel. Its interior is roomy up front and can be lavishly appointed.",
+    "price":"102000",
+	"img":"https://i.ibb.co/J5RBMnT/porsh.jpg",
+	"quantity":"5",
+	"seller":"Porsche"
+
+}
+,
+{
+	"name":"Audi R8",
+	"description":"Audi's top model, the R8 sports car boasts a howling 602-hp V-10 engine just behind its snug two-seat cabin. Its engine and huge breadth of ability make it feel increasingly special.",
+    "price":"143000",
+	"img":"https://i.ibb.co/K70Y3R0/audiR8.jpg",
+	"quantity":"6",
+	"seller":"Audi"
+
+}
+,
+{
+	"name":"Ferrari SF90",
+	"description":"The Ferrari SF90 Stradale (Type F173) is a mid-engine PHEV (Plug-in Hybrid Electric Vehicle) sports car produced by the Italian automobile manufacturer.it has Stradale includes Bluetooth wireless phone connectivity and an integrated navigation system among its list of standard equipment",
+    "price":"507000",
+	"img":"https://i.ibb.co/ykYsdQV/ferari.jpg",
+	"quantity":"5",
+	"seller":"Ferrari"
+
+}
+,
+{
+	"name":"Honda s2000",
+	"description":"Honda's two-seat, four-wheel sportbike offers rear-drive roadster fun in a spectacularly balanced chassis.Honda S2000 (AP2) Specs ; Engine, in-line 4-cyl, 1997cc ; Power, 237bhp @ 8300rpm ; Torque, 153lb ft @ 7500rom ; Transmission, Six-speed manual, rear-wheel drive.",
+    "price":"37500",
+	"img":"https://i.ibb.co/qJDXC7n/hunda.jpg",
+	"quantity":"12",
+	"seller":"Honda"
+
+}
+,
+{
+	"name":"GLA45 AMG DC/T",
+	"description":"Mercedes-Benz AMG GLA 45 AMG Speedshift DCT 7-Speed has a beneficial value of about 529,900 kr. The agile and dynamic power transfer is assisted by the AMG SPEEDSHIFT DCT 7-speed sports transmission. ",
+    "price":"54500",
+	"img":"https://i.ibb.co/d2BYx3Q/benz.jpg",
+	"quantity":"8",
+	"seller":"Mercedes"
+
+}
+,
+{
+	"name":"Toyota GR Supra",
+	"description":"The Toyota GR Supra's 3.0-litre, in-line six-cylinder engine has all the ingredients to stimulate your senses.The 2023 Supra, delivers enough excitement, style, and drama to make up for the brand's more sedate sedans, hatchbacks",
+    "price":"43000",
+	"img":"https://i.ibb.co/R2qX2pk/toyota.jpg",
+	"quantity":"9",
+	"seller":"Toyota"
+
+}
+,
+{
+
+	"name":"Tesla Roadster",
+	"description":"The Tesla Roadster is a battery electric vehicle (BEV) sports car, based on the Lotus Elise chassis, that was produced by the electric car firm Tesla Motors.",
+    "price":"200000",
+	"img":"https://i.ibb.co/xF5cTJw/tesla.jpg",
+	"quantity":"4",
+	"seller":"Tesla"
+
+}
+
+
+
+]
