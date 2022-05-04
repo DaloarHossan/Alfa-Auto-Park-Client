@@ -15,7 +15,7 @@ const Inventory = (props) => {
 			<p>{seller}</p>
 			<p>Quantity:{quantity}</p>
 			<p>{description.slice(0,120)}<span className='ml-6 text-orange-500'>Read more ....</span></p>
-			<button className='border-2 px-8 py-3'>Update</button>
+			<button className='border-2 px-6 py-2'>Update</button>
 		</div>
 	);
 };
