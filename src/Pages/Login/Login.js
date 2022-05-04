@@ -41,12 +41,12 @@ const Login = () => {
   return (
     <div className=" grid md:grid-cols-2">
       <div className="hidden md:block">
-        <img src={loginpng} alt="" srcset="" />
+        <img src={loginpng} alt=""  />
       </div>
       <div className="flex flex-col justify-start items-start m-auto">
         <form className="mt-6" onSubmit={handelSubmit}>
 			<div className="flex justify-center">
-			<img className="w-32" src={avater} alt="" srcset="" />
+			<img className="w-32 "  src={avater} alt=""  />
 			</div>
           
           <h1 className="text-center font-bold text-3xl text-gray-700 mt-6">
