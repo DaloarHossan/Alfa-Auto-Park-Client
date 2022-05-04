@@ -61,9 +61,9 @@ const SignUp = () => {
 			  className="border-2
 					 px-20 py-3 rounded-full bg-primarycolor text-white hover:translate-y-2 translate-all duration-500 ml-4"
 			>
-			  Login
+			  Sign Up
 			</button>
-			<p className="my-3 text-sm">Already have an account?<span className="text-primarycolor"><Link to='/signup'>Log in</Link></span></p>
+			<p className="my-3 text-sm">Already have an account?<span className="text-primarycolor"><Link to='/login'>Log in</Link></span></p>
 		  </form>
 		  
 		</div>
