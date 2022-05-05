@@ -4,13 +4,15 @@ import avater from "../../image/avater.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import auth from "../../firebase.config";
 
 
 const Login = () => {
 	const navigate=useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
 	const [signInWithGoogle, googleuser, gloading, googleerror] = useSignInWithGoogle(auth);
 
 	const [
@@ -20,9 +22,8 @@ const Login = () => {
 		error,
 	  ] = useSignInWithEmailAndPassword(auth);
 
-	  if(user){
-		  console.log(user)
-		//   navigate('/')
+	  if(user || googleuser){
+      navigate(from, { replace: true });
 	  }
  
 	  const handelSubmit=(e)=>{
@@ -31,11 +32,13 @@ const Login = () => {
 		const pass=e.target.password.value;
 		
 		signInWithEmailAndPassword(email,pass);
+    
 		
 	   
 	}
 	const handelGoogle=()=>{
 		signInWithGoogle()
+    
 	}
 
   return (
