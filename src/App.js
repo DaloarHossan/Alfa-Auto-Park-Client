@@ -1,5 +1,6 @@
 
 import { Route, Routes } from 'react-router-dom';
+
 import './App.css';
 import Blogs from './Pages/Blogs/Blogs';
 import Home from './Pages/Home/Home';
@@ -23,6 +24,7 @@ function App() {
         <Route path='/inventory/:id' element={<PrivetRoute><InventoryCar></InventoryCar></PrivetRoute>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
+     
     </div>
   );
 }

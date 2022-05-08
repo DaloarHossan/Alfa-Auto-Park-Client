@@ -11,7 +11,7 @@ const Navbar = () => {
 	}
 	return (
 		<div className='bg-slate-600 p-4 flex justify-between text-white sticky top-0'>
-			<h1>Navbar</h1>
+			<h1>Alfa Auto Park</h1>
 			<ul className='flex mr-4'>
 			<li className='mr-3'>
 					<NavLink
