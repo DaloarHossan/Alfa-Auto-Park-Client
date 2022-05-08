@@ -38,24 +38,15 @@ const Navbar = () => {
 					</NavLink>
 				  </li>
 				{
-					user?<><li className='p-3'>
+					user?<>
+					<li className='p-3'>
 					<NavLink
-					  to="tasks"
+					  to="/myitem"
 					  className={({ isActive }) =>
 						isActive ? 'text-primarycolor' : undefined
 					  }
 					>
-					  Add item
-					</NavLink>
-				  </li>
-				  <li className='p-3'>
-					<NavLink
-					  to="tasks"
-					  className={({ isActive }) =>
-						isActive ? 'text-primarycolor' : undefined
-					  }
-					>
-					  Manage
+					  My item
 					</NavLink>
 				  </li>
 				  </>

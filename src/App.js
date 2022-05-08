@@ -7,6 +7,7 @@ import Blogs from './Pages/Blogs/Blogs';
 import Home from './Pages/Home/Home';
 import InventoryCar from './Pages/InventoryCar/InventoryCar';
 import Login from './Pages/Login/Login';
+import Myitem from './Pages/Myiteam/Myitem';
 import NotFound from './Pages/NotFound/NotFound';
 import Footer from './Pages/Shared/Footer/Footer';
 import Navbar from './Pages/Shared/Navbar/Navbar';
@@ -22,8 +23,9 @@ function App() {
         </Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
-        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/inventory' element={<Allinventory></Allinventory>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/myitem' element={<Myitem></Myitem>}></Route>
         <Route path='/inventory/:id' element={<PrivetRoute><InventoryCar></InventoryCar></PrivetRoute>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
