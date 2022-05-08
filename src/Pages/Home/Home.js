@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import About from './About/About';
 import Banner from './Banner/Banner';
 import Inventory from './Inventory/Inventory';
+import InventoryFilter from './InventoryFilter/InventoryFilter';
 
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
 					)
 				}
 			</div>
+			<InventoryFilter></InventoryFilter>
             <About></About>
 		</div>
 	);
