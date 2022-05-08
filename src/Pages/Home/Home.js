@@ -1,5 +1,7 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import { faArrowRight} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
+import useCarCollection from '../../Hocks/CarCollection';
 import About from './About/About';
 import Banner from './Banner/Banner';
 import Inventory from './Inventory/Inventory';
@@ -7,14 +9,7 @@ import InventoryFilter from './InventoryFilter/InventoryFilter';
 
 
 const Home = () => {
-	const [carCollection,setCarCollection]=useState([]);
-	useEffect(()=>{
-		(async()=>{
-       const {data}=await axios.get('https://nameless-spire-11955.herokuapp.com/inventory')
-		   setCarCollection(data.data)
-	   
-		})()
-	},[])
+	const [carCollection]=useCarCollection([]);
 	const carSlice=carCollection.slice(0,6)
 	return (
 		<div>
@@ -28,6 +23,8 @@ const Home = () => {
 					car={car}></Inventory>
 					)
 				}
+				<p className='mt-4 text-primarycolor font-semibold ml-4
+				'><Link to='/inventory'>See All <FontAwesomeIcon icon={faArrowRight}/> </Link></p>
 			</div>
 			<InventoryFilter></InventoryFilter>
             <About></About>
