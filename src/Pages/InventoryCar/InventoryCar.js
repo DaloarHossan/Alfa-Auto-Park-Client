@@ -10,13 +10,11 @@ const InventoryCar = () => {
             const {data}=await axios.get(`https://nameless-spire-11955.herokuapp.com/inventory/${id}`)
 			SetCarDetails(data.data)
 			console.log(data.data)
-		
 		})()
 	},[newDetails]);
 	const {name,img,price,description,quantity,seller}=carDetails
 	const handelDelivery = async(e)=>{
 		e.preventDefault();
-
 		const updateQuantity=(parseInt(quantity)-1);
 		const newUpdate=updateQuantity + ''
 		console.log(newUpdate)

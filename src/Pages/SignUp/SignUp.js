@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword,useSendEmailVerification, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import loginpng from "../../image/login.png";
 import avater from "../../image/avater.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,20 +17,17 @@ const SignUp = () => {
 		loading,
 		error,
 	  ] = useCreateUserWithEmailAndPassword(auth);
+	  const [sendEmailVerification] = useSendEmailVerification(auth);
 	  const handelSubmit=(e)=>{
 		e.preventDefault()
 		const email=e.target.email.value;
 		const pass=e.target.password.value;
-		createUserWithEmailAndPassword(email,pass);
-		
-	   
+		createUserWithEmailAndPassword(email,pass); 
 	}
    const handelGoogle=()=>{
 	   signInWithGoogle()
    }
 	
-
-
 	return (
 		<div className=" grid md:grid-cols-2">
 		<div className="hidden md:block">

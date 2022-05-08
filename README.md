@@ -1,6 +1,7 @@
 # Alfa Auto Park website
 
-## [Privet repo link](https://github.com/facebook/create-react-app).
+## [Private repo link](https://alfa-auto-park.web.app).
+## [private server side](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-DaloarHossan)
 
 ## Description :
 - Create a simple navbar,banner.
