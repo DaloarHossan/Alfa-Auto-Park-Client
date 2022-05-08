@@ -7,7 +7,7 @@ const InventoryCar = () => {
 	const [newDetails,SetNewDetails]=useState([])
 	useEffect(()=>{
 		(async()=>{
-            const {data}=await axios.get(`http://localhost:5000/inventory/${id}`)
+            const {data}=await axios.get(`https://nameless-spire-11955.herokuapp.com/inventory/${id}`)
 			SetCarDetails(data.data)
 			console.log(data.data)
 		
@@ -21,7 +21,7 @@ const InventoryCar = () => {
 		const newUpdate=updateQuantity + ''
 		console.log(newUpdate)
 		console.log(typeof(newUpdate));
-		await axios.put(`http://localhost:5000/inventory/${id}`,{quantity:newUpdate})
+		await axios.put(`https://nameless-spire-11955.herokuapp.com/inventory/${id}`,{quantity:newUpdate})
 		SetNewDetails(newUpdate)
 	}
   const handelRestock = async(e)=>{
@@ -33,7 +33,7 @@ const InventoryCar = () => {
 	  const newUpdate=updateQuantity + ''
 	  console.log(newUpdate)
 	  console.log(typeof(newUpdate));
-	 await axios.put(`http://localhost:5000/inventory/${id}`,{quantity:newUpdate})
+	 await axios.put(`https://nameless-spire-11955.herokuapp.com/inventory/${id}`,{quantity:newUpdate})
 	SetNewDetails(newUpdate)
 	e.target.reset()
   }

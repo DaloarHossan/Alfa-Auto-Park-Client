@@ -10,7 +10,7 @@ const Home = () => {
 	const [carCollection,setCarCollection]=useState([]);
 	useEffect(()=>{
 		(async()=>{
-       const {data}=await axios.get('http://localhost:5000/inventory')
+       const {data}=await axios.get('https://nameless-spire-11955.herokuapp.com/inventory')
 		   setCarCollection(data.data)
 	   
 		})()
