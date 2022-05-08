@@ -1,19 +1,23 @@
+import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { signOut } from 'firebase/auth';
-import React from 'react';
+import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, NavLink } from 'react-router-dom';
 import auth from '../../../firebase.config';
 
 const Navbar = () => {
 	const [user, loading, error] = useAuthState(auth);
+	const [open,setOpen]=useState(false);
 	const handelSignOut=()=>{
 		signOut(auth)
 	}
 	return (
-		<div className='bg-slate-600 p-4 flex justify-between text-white sticky top-0'>
-			<h1>Alfa Auto Park</h1>
-			<ul className='flex mr-4'>
-			<li className='mr-3'>
+		<div className='bg-slate-700 p-4  text-white sticky top-0'>
+			
+		    <div>
+			<ul className={`md:flex justify-center  w-full block absolute bg-slate-700 md:static duration-500 ease-in-out ${open? 'top-10':'top-[-500px]'}`}>
+			<li className='p-3'>
 					<NavLink
 					  to="/"
 					  className={({ isActive }) =>
@@ -23,8 +27,18 @@ const Navbar = () => {
 					  Home
 					</NavLink>
 				  </li>
+				  <li className='p-3'>
+					<NavLink
+					  to="/inventory"
+					  className={({ isActive }) =>
+						isActive ? 'text-primarycolor' : undefined
+					  }
+					>
+					 Inventory
+					</NavLink>
+				  </li>
 				{
-					user?<><li className='mr-3'>
+					user?<><li className='p-3'>
 					<NavLink
 					  to="tasks"
 					  className={({ isActive }) =>
@@ -34,7 +48,7 @@ const Navbar = () => {
 					  Add item
 					</NavLink>
 				  </li>
-				  <li className='mr-3'>
+				  <li className='p-3'>
 					<NavLink
 					  to="tasks"
 					  className={({ isActive }) =>
@@ -48,7 +62,7 @@ const Navbar = () => {
 				  :<li></li>
 				}
 					 
-					 <li className='mr-3'>
+					 <li className='p-3'>
 					<NavLink
 					  to="/blogs"
 					  className={({ isActive }) =>
@@ -58,7 +72,7 @@ const Navbar = () => {
 					  Blogs
 					</NavLink>
 				  </li>
-					 <li>
+					 <li className='p-3'>
 						 {
 							 user?<NavLink
 							 to="/login"
@@ -82,6 +96,13 @@ const Navbar = () => {
 				
 				
 			</ul>
+			</div>
+			<div onClick={()=>setOpen(!open)} className='md:hidden'>
+				{
+					open? <FontAwesomeIcon className='w-6 hi-6' icon={faX}/> : <FontAwesomeIcon className='w-6 h-6' icon={faBars}/>
+				}
+				
+			</div>
 		</div>
 	);
 };

@@ -1,90 +1,26 @@
-import React from 'react';
-import banner1 from './image/banner-1.jpg'
-import banner2 from './image/banner-2.jpg'
-import banner3 from './image/banner-3.jpg'
+import React from "react";
+import banner from "./image/car.png";
 
 const Banner = () => {
-	return (
-		<div className='max-h-screen bg-black opacity-100'>
-			<div id="carouselExampleCaptions" className="carousel slide relative" data-bs-ride="carousel">
-  <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4 ">
-    <button
-      type="button"
-      data-bs-target="#carouselExampleCaptions"
-      data-bs-slide-to="0"
-      className="active"
-      aria-current="true"
-      aria-label="Slide 1"
-    ></button>
-    <button
-      type="button"
-      data-bs-target="#carouselExampleCaptions"
-      data-bs-slide-to="1"
-      aria-label="Slide 2"
-    ></button>
-    <button
-      type="button"
-      data-bs-target="#carouselExampleCaptions"
-      data-bs-slide-to="2"
-      aria-label="Slide 3"
-    ></button>
-  </div>
-  <div className="carousel-inner relative w-full overflow-hidden ">
-    <div className="carousel-item active relative float-left w-full">
-      <img 
-        src={banner1}
-        className="block w-full "
-        alt="..."
-      />
-      <div className="carousel-caption hidden md:block absolute text-center">
-        <h5 className="text-xl">First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+  return (
+    <div className="grid md:grid-cols-2 mt-8 gap-4" >
+      <div className='flex items-center justify-center md:order-2  md:h-screen'>
+        <img className="w-full" src={banner} alt=""></img>
       </div>
-    </div>
-    <div className="carousel-item relative float-left w-full">
-      <img
-        src={banner2}
-        className="block w-full "
-        alt="..."
-      />
-      <div className="carousel-caption hidden md:block absolute text-center">
-        <h5 className="text-xl">Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+      <div className="flex flex-col justify-center ml-8">
+       <div className='mb-4'>
+       <h1 className='text-3xl font-bold mb-2 uppercase md:text-5xl'>Improve <span className="text-primarycolor">Your</span>  <br />
+       <span className='text-primarycolor'> Business</span> With us</h1>
+        <p>We offer best price option.we are provided latest feature  vehicle and also offer 24 hours <br />
+         customer service.We have everything your car needs!</p>
+       </div>
+        <div >
+        <button className=" border-2 rounded-3xl bg-primarycolor text-white px-8 py-2">See More</button>
+        </div>
       </div>
+      
     </div>
-    <div className="carousel-item relative float-left w-full">
-      <img
-        src={banner3}
-        className="block w-full "
-        alt="..."
-      />
-      <div className="carousel-caption hidden md:block absolute text-center">
-        <h5 className="text-xl">Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button
-    className="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-    type="button"
-    data-bs-target="#carouselExampleCaptions"
-    data-bs-slide="prev"
-  >
-    <span className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button
-    className="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-    type="button"
-    data-bs-target="#carouselExampleCaptions"
-    data-bs-slide="next"
-  >
-    <span className="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
-		</div>
-	);
+  );
 };
 
 export default Banner;
