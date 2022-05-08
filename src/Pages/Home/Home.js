@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import About from './About/About';
 import Banner from './Banner/Banner';
 import Inventory from './Inventory/Inventory';
 
@@ -18,7 +19,7 @@ const Home = () => {
 		<div>
 			
 			<Banner></Banner>
-			<h1 className='text-center'>Inventory Iteam</h1>
+			<h1 className='text-center text-3xl font-bold mt-4'>Inventory Iteam</h1>
 			<div className='grid md:grid-cols-3 gap-4 mt-12'>
 			
 				{
@@ -27,6 +28,7 @@ const Home = () => {
 					)
 				}
 			</div>
+            <About></About>
 		</div>
 	);
 };
