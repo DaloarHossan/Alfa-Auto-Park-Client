@@ -50,7 +50,7 @@ const Navbar = () => {
 					 
 					 <li className='mr-3'>
 					<NavLink
-					  to="tasks"
+					  to="/blogs"
 					  className={({ isActive }) =>
 						isActive ? 'text-primarycolor' : undefined
 					  }
