@@ -16,13 +16,13 @@ const SignUp = () => {
 		user,
 		loading,
 		error,
-	  ] = useCreateUserWithEmailAndPassword(auth);
-	  const [sendEmailVerification] = useSendEmailVerification(auth);
+	  ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
+
 	  const handelSubmit=(e)=>{
 		e.preventDefault()
 		const email=e.target.email.value;
 		const pass=e.target.password.value;
-		createUserWithEmailAndPassword(email,pass); 
+		createUserWithEmailAndPassword(email,pass);
 	}
    const handelGoogle=()=>{
 	   signInWithGoogle()
