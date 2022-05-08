@@ -35,6 +35,7 @@ const InventoryCar = () => {
 	  console.log(typeof(newUpdate));
 	 await axios.put(`http://localhost:5000/inventory/${id}`,{quantity:newUpdate})
 	SetNewDetails(newUpdate)
+	e.target.reset()
   }
 	
 	return (

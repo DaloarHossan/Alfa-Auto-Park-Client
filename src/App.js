@@ -7,6 +7,7 @@ import Home from './Pages/Home/Home';
 import InventoryCar from './Pages/InventoryCar/InventoryCar';
 import Login from './Pages/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
+import Footer from './Pages/Shared/Footer/Footer';
 import Navbar from './Pages/Shared/Navbar/Navbar';
 import SignUp from './Pages/SignUp/SignUp';
 import PrivetRoute from './PrivetRoute/PrivetRoute';
@@ -24,6 +25,7 @@ function App() {
         <Route path='/inventory/:id' element={<PrivetRoute><InventoryCar></InventoryCar></PrivetRoute>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer></Footer>
      
     </div>
   );

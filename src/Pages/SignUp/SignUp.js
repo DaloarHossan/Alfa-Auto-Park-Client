@@ -5,6 +5,7 @@ import avater from "../../image/avater.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
+import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import auth from '../../firebase.config';
 
@@ -47,7 +48,7 @@ const SignUp = () => {
 			<button onClick={handelGoogle} className="relative w-full mt-6 border rounded-md py-2 text-sm bg-primarycolor text-white hover:translate-y-2 translate-all duration-500">
 		<span className="absolute left-0 top-0 flex items-center justify-center h-full w-10 text-blue-500">
 	   
-		</span>
+		</span><FontAwesomeIcon className="mr-2" icon={faGoogle}/>
 		<span>Login with Google</span>
 	  </button>
 			<div className="relative my-10 h-px bg-gray-300">
